@@ -1,10 +1,7 @@
 MINIMUM_LENGTH = 4
-
-
 def main():
     password = get_password(MINIMUM_LENGTH)
     print_asterisks(password)
-
 
 def get_password(minimum_length):
     password = input(f"Enter password of at least {minimum_length} characters: ")
