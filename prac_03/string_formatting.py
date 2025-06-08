@@ -1,21 +1,19 @@
 name = "Gibson L-5 CES"
 year = 1922
-cost = 16035.999
+cost = 16035.9
 
-print("My guitar: {} {}".format(year, name))
-print("My guitar: {1} {0}".format(name, year))
-print("My guitar: {0} {0} {0}".format(name))
-print("My guitar: {} for about ${:,.2f}!".format(name, cost))
+print("My guitar: " + name + ", first made in " + str(year))
 
-print(f"My guitar: {year} {name}")
-print(f"My guitar: {name} for about ${cost:,.2f}!")
+print("My guitar: {}, first made in {}".format(name, year))
+print("My guitar: {0}, first made in {1}".format(name, year))
+print("My {0} was first made in {1} (that's right, {1}!)".format(name, year))
 
-numbers = [1, 19, 123456, 4, 987]
-for i in numbers:
-    print(f"Number is {i:>10}")
+print(f"My {name} was first made in {year} (that's right, {year}!)")
+
+print("My {} would cost ${:,.2f}".format(name, cost))
+print(f"My {name} would cost ${cost:,.2f}")
 
 print(f"{year} {name} for about ${cost:,.0f}!")
 
 for i in range(11):
     print(f"2 ^ {i:2} is {2 ** i:4}")
-
