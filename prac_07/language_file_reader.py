@@ -13,7 +13,6 @@ from programming_language import ProgrammingLanguage
 def main():
     """Read file of programming language details, save as objects, display."""
     languages = []
-    max()
     # Open the file for reading
     in_file = open('languages.csv', 'r')
     # File format is like: Language,Typing,Reflection,Year
@@ -29,7 +28,8 @@ def main():
         reflection = parts[2] == "Yes"
         # Construct a ProgrammingLanguage object using the elements
         # year should be an int
-        language = ProgrammingLanguage(parts[0], parts[1], reflection, int(parts[3]))
+        pointer_arithmetic = parts[4] == "Yes"
+        language = ProgrammingLanguage(parts[0], parts[1], reflection, int(parts[3]), pointer_arithmetic)
         # Add the language we've just constructed to the list
         languages.append(language)
     # Close the file as soon as we've finished reading it
@@ -78,7 +78,7 @@ def using_namedtuple():
 
 
 def using_csv_namedtuple():
-    """Language filee reader version using both csv module and named tuple."""
+    """Language file reader version using both csv module and named tuple."""
     Language = namedtuple('Language', 'name, typing, reflection, year')
     in_file = open("languages.csv", "r")
     in_file.readline()
