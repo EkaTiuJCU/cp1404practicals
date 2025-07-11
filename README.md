@@ -2,8 +2,6 @@
 
 Practical work for IT@JCU CP1404
 
-# CP1404 Practicals
-
 ## About This Repository
 
 This repository contains my practical work for [CP1404 - Programming II](https://github.com/CP1404/CP1404Practicals), a subject at James Cook University that focuses on object-oriented programming, clean code practices, and software development techniques using Python.
