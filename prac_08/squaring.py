@@ -12,7 +12,6 @@ from kivy.properties import StringProperty
 
 __author__ = 'Lindsay Ward'
 
-
 class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
     output_text = StringProperty()  # Define a property to use with kv
